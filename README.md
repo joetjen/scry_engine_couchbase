@@ -27,7 +27,7 @@ the behaviour this implements lives in
 ## Usage
 
 ```elixir
-{:ok, conn} = Scry.Engine.Couchbase.Conn.open(bucket: "mybucket", auth: {"Administrator", "password"})
+{:ok, conn} = Scry.Engine.Couchbase.Conn.open(bucket: "mybucket", auth: {"Administrator", "password123"})
 
 {:ok, query} = Scry.Core.parse(~s(SELECT library.catalog.fiction { title, PARENT { name } }))
 {:ok, cursor} = Scry.Core.Executor.run(query, Scry.Engine.Couchbase, conn)
