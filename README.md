@@ -11,17 +11,16 @@ bucket/scope/collection-and-N1QL-backed `DEEP`/`PARENT`/`SIBLINGS`/
 and
 [`scry_engine_couchdb`](https://github.com/joetjen/scry_engine_couchdb)
 -- and, not incidentally, `scry_reldoc`'s own long-deferred storage
-adapter: impl_spec.md §6 had named Couchbase there from the start,
-deferred as lower marginal value than `scry_docgraph`'s own ArangoDB
-landing, since `scry_reldoc` is a thin delegate to `scry_document`
-already validated twice over. Confirming the correlated-nested-`SELECT`
-composition holds against a genuinely different backend is this
+adapter: Couchbase had been named from the start, deferred as lower
+marginal value than `scry_docgraph`'s own ArangoDB landing, since
+`scry_reldoc` is a thin delegate to `scry_document` already validated
+twice over. Confirming the correlated-nested-`SELECT` composition
+holds against a genuinely different backend is this
 package's own real, distinct contribution -- see `test/scry/engine/
 couchbase/reldoc_test.exs`.
 
-Source: <https://github.com/joetjen/scry_engine_couchbase>. Specs live
-in the separate [`scry`](https://github.com/joetjen/scry) repository;
-the behaviour this implements lives in
+Source: <https://github.com/joetjen/scry_engine_couchbase>. The
+behaviour this implements lives in
 [`scry_core`](https://github.com/joetjen/scry_core).
 
 ## Usage

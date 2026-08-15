@@ -54,7 +54,7 @@ defmodule Scry.Engine.Couchbase.MixProject do
       # `Scry.Core.EngineBehaviour` and returns `Scry.Core.Query.t()`-
       # shaped data, so it's the real dependency, not test-only. Switch
       # to a `~> x.y` Hex requirement once scry_core is actually
-      # published (impl_spec.md's own dependency-versions convention).
+      # published.
       {:scry_core, path: "../scry_core"},
 
       # === PARITY TESTING ===
@@ -66,10 +66,10 @@ defmodule Scry.Engine.Couchbase.MixProject do
       # executor. `scry_reldoc` itself is also test-only, needed for the
       # separate end-to-end proof this package exists to add: that the
       # relational+document composite's own correlated-nested-`SELECT`
-      # semantics (impl_spec.md §6's `scry_reldoc` row) hold against a
-      # *third* real document backend, not just asserted from `scry_
-      # engine_mongodb_driver`/`scry_engine_couchdb` already having
-      # covered `scry_document` itself twice over.
+      # semantics hold against a *third* real document backend, not
+      # just asserted from `scry_engine_mongodb_driver`/
+      # `scry_engine_couchdb` already having covered `scry_document`
+      # itself twice over.
       {:scry_document, path: "../scry_document", only: :test},
       {:scry_reldoc, path: "../scry_reldoc", only: :test},
 

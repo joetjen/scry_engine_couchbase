@@ -4,7 +4,7 @@ defmodule Scry.Engine.Couchbase.ParityTest do
   directly: `scry_document`'s own reference `Scry.Document.Executor`
   and this package's `Scry.Engine.Couchbase` (a real Couchbase-backed
   adapter) are two implementations of the identical `DEEP`/`PARENT`/
-  `SIBLINGS`/`ANCESTORS` semantics (lang_spec.md §8.3) -- the same
+  `SIBLINGS`/`ANCESTORS` semantics -- the same
   posture already established for `scry_graph`/`scry_engine_neo4j` and
   `scry_document`/`scry_engine_mongodb_driver`/`scry_engine_couchdb`.
   This suite parses one query text *once* (`Scry.Document.parse/1`),

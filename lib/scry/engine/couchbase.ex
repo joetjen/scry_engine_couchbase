@@ -10,9 +10,9 @@ defmodule Scry.Engine.Couchbase do
   and
   [`scry_engine_couchdb`](https://github.com/joetjen/scry_engine_couchdb)
   -- and, not incidentally, `scry_reldoc`'s own long-deferred storage
-  adapter (impl_spec.md §6 had named Couchbase there from the start,
-  deferred as lower marginal value than `scry_docgraph`'s own ArangoDB
-  landing, since `scry_reldoc` is a thin delegate to `scry_document`
+  adapter (Couchbase had been named from the start, deferred as lower
+  marginal value than `scry_docgraph`'s own ArangoDB landing, since
+  `scry_reldoc` is a thin delegate to `scry_document`
   already validated twice over -- confirming the correlated-nested-
   `SELECT` composition holds against a genuinely different backend is
   this package's own real, distinct contribution, not a rerun of
