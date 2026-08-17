@@ -31,6 +31,9 @@ jobs:
       - name: Checkout scry_reldoc (path dependency)
         run: git clone --depth 1 https://github.com/joetjen/scry_reldoc.git ../scry_reldoc
 
+      - name: Checkout dextrin (path dependency)
+        run: git clone --depth 1 https://github.com/joetjen/dextrin.git ../dextrin
+
       - name: Set up Elixir
         id: beam
         uses: erlef/setup-beam@v1
